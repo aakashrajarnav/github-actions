@@ -11,8 +11,10 @@ on:
   pull_request:
     branches: [main]
 
+# these are jobs inside the workflow
 jobs:
-  greet:
+  greet: # job name
+  # this is github runner, each job runs on a runner
     runs-on: ubuntu-latest
     steps:
       - name: say hello world
@@ -23,7 +25,7 @@ jobs:
 
   details:
     runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch'
+    #if: github.event_name == 'workflow_dispatch'
     steps:
       - name : version of python, docker etc
         run : python --version && docker --version
