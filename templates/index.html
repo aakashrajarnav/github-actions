@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Journey</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(120deg,#141e30,#243b55);
+font-family:Segoe UI,Roboto,Arial,sans-serif;
+color:#f1f5f9;
+}
+
+.wrapper{
+text-align:center;
+max-width:700px;
+padding:2rem;
+}
+
+h1{
+font-size:2.6rem;
+margin-bottom:0.6rem;
+background:linear-gradient(90deg,#00f5a0,#00d9f5);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+color:#cbd5f5;
+margin-bottom:1.4rem;
+font-size:0.95rem;
+}
+
+.tag{
+display:inline-block;
+padding:6px 14px;
+border-radius:20px;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.15);
+font-size:0.8rem;
+margin-bottom:1.6rem;
+}
+
+.tech-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:1rem;
+}
+
+.tech{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+padding:1.2rem;
+border-radius:10px;
+transition:transform .2s ease, background .2s ease;
+}
+
+.tech:hover{
+transform:translateY(-4px);
+background:rgba(255,255,255,0.08);
+}
+
+.tech small{
+display:block;
+font-size:0.7rem;
+letter-spacing:1px;
+color:#94a3b8;
+margin-bottom:4px;
+}
+
+.tech strong{
+font-size:1.1rem;
+color:#ffffff;
+}
+
+.footer{
+margin-top:1.8rem;
+font-size:0.8rem;
+color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<h1>DevOps Learning Hub</h1>
+<p class="subtitle">Experimenting with modern DevOps tools and CI/CD pipelines</p>
+
+<div class="tag">Automated Build • Test • Deploy</div>
+
+<div class="tech-grid">
+
+<div class="tech">
+<small>Language</small>
+<strong>Python</strong>
+</div>
+
+<div class="tech">
+<small>Framework</small>
+<strong>Flask</strong>
+</div>
+
+<div class="tech">
+<small>CI/CD</small>
+<strong>GitHub Actions</strong>
+</div>
+
+<div class="tech">
+<small>Container</small>
+<strong>Docker</strong>
+</div>
+
+<div class="tech">
+<small>Cloud</small>
+<strong>AWS</strong>
+</div>
+
+<div class="tech">
+<small>Monitoring</small>
+<strong>OpenTelemetry</strong>
+</div>
+
+</div>
+
+<div class="footer">
+Part of my DevOps automation and CI/CD practice projects
+</div>
+
+</div>
+
+</body>
+</html>
