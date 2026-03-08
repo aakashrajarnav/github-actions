@@ -14,8 +14,8 @@ jobs:
               uses: actions/checkout@v4
 
               # Enables cross-platform builds
-            - name: Set up QEMU
-              uses: docker/setup-qemu-action@v3
+            #- name: Set up QEMU
+             # uses: docker/setup-qemu-action@v3
 
               # Enables Docker Buildx
             - name: Set up Docker Buildx
