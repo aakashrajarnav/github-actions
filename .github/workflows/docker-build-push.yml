@@ -13,9 +13,11 @@ jobs:
             - name: Code Checkout
               uses: actions/checkout@v4
 
-              # Enables cross-platform builds
-            #- name: Set up QEMU
-             # uses: docker/setup-qemu-action@v3
+              # Enables cross-platform builds, QEMU is required when building images for a different CPU architecture
+              # than the host machine. In CI systems like GitHub Actions, runners are typically amd64, 
+              # so to build arm64 images we enable QEMU emulation along with Docker Buildx.
+            - name: Set up QEMU
+              uses: docker/setup-qemu-action@v3
 
               # Enables Docker Buildx
             - name: Set up Docker Buildx
