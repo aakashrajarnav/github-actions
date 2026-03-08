@@ -15,6 +15,7 @@ on:
 jobs:
   greet:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push'
     steps:
       - name: say hello world
         run : echo "Hello World"
