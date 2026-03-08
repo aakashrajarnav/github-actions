@@ -32,7 +32,7 @@ docker run -p 80:80 aakashrajarnav/github-actions-app:latest
 
 Then open in your browser:
 
-http://localhost
+http://localhost:80
 
 ## Supported Architectures
 
