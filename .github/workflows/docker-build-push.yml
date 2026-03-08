@@ -32,6 +32,8 @@ jobs:
             - name: Docker Hub Description
               uses: peter-evans/dockerhub-description@v2
               with:
+                username: ${{ vars.DOCKERHUB_USER }}
+                password: ${{ secrets.DOCKERHUB_TOKEN }}
                 repository: ${{ vars.DOCKERHUB_USER }}/github-actions-app
                 
             - name: Build & Push to Docker Hub
